@@ -3,6 +3,7 @@
 
 
 FEATURES
+
 *Responsive Design: The layout adapts to different screen sizes, from desktops to mobile devices.
 
 *Password Strength Indicator: Provides real-time feedback on password strength using a colored bar and a label.
