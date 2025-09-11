@@ -1,5 +1,7 @@
 * This is a responsive user signup form with a real-time password strength checker and a dynamic dashboard that displays registered users.
 * The application uses client-side storage (localStorage) to persist user data without a backend server.
+
+
 FEATURES
 *Responsive Design: The layout adapts to different screen sizes, from desktops to mobile devices.
 
