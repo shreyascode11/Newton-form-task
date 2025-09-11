@@ -1,1 +1,0 @@
-# Newton-form-task

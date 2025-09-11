@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Signup — Dashboard</title>
+  <link rel="stylesheet" href="nscc1.css" />
+</head>
+<body>
+  <div class="app">
+    <h1 class="brand">User Signup</h1>
+
+    <form id="signupForm" class="card signup-card" autocomplete="off" novalidate>
+      <div class="field">
+        <input id="username" name="username" type="text" placeholder="" required />
+        <label for="username">Username</label>
+        <small class="error" id="usernameError"></small>
+      </div>
+
+      <div class="field">
+        <input id="email" name="email" type="email" placeholder=" " required />
+        <label for="email">Email</label>
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <div class="field">
+        <input id="password" name="password" type="password" placeholder=" " required oninput="checkStrength()" />
+        <label for="password">Password</label>
+        <div class="strength-row">
+          <div id="strengthBar" class="strength-bar"></div>
+          <span id="strengthLabel" class="strength-label"></span>
+        </div>
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <button type="submit" class="btn primary">Sign up</button>
+    </form>
+
+    <section id="dashboard" class="card dashboard-card" aria-live="polite" hidden>
+      <h2>Dashboard</h2>
+      <div class="table-wrap">
+        <table id="userTable" class="user-table" role="table" aria-label="Registered users">
+          <thead>
+            <tr>
+              <th scope="col">Username</th>
+              <th scope="col">Email</th>
+              <th scope="col" class="action-col">Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="actions">
+        <button id="clearBtn" class="btn danger">Clear all</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="nscc1.js"></script>
+</body>
+</html>
